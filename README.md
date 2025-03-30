@@ -5,4 +5,4 @@ Welcome to the Web Security Research repository! This repository is dedicated to
 **"This repository will serve as a structured and continuously updated knowledge base for documenting the vulnerabilities I study. It will include:** 
 ### Client-side vulnerabilities 
 - [XSS](https://github.com/islamkh0x0/Web-Security-Vulnerabilities/tree/master/XSS) 
-- CORS
+- [CORS](https://github.com/islamkh0x0/Web-Security-Vulnerabilities/tree/master/CORS)
