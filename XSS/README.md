@@ -12,7 +12,7 @@ An attacker can use XSS to execute scripts in a victim’s browser, leading to:
 ---
 ## Types of XSS
 
-### 1. **Reflected XSS
+### 1. Reflected XSS
 
 Reflected XSS occurs when a malicious script is immediately reflected off a web application and executed in a victim’s browser. This often happens through manipulated URLs, search forms, or error messages.
 
@@ -25,7 +25,7 @@ Reflected XSS occurs when a malicious script is immediately reflected off a web 
 
 ---
 
-### 2. **Stored XSS 
+### 2. Stored XSS 
 
 Stored XSS happens when the injected script is permanently stored on a server (e.g., in a database, comment section, or forum post). When another user views the stored data, the script executes in their browser.
 
