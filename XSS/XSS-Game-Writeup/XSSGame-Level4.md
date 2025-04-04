@@ -24,11 +24,12 @@ I read the source code and found the following:
     </center>
   </body>
 </html>
-The only interesting thing was the <a href="confirm?next=welcome"> link. This link would take me to the confirm page, where I found the following code:
+``` 
 
-html
-Copy
-Edit
+The only interesting thing was the <a href="confirm?next=welcome"> link. This link would take me to the confirm page, where I found the following code:
+ 
+
+```html
 <!DOCTYPE html>
 <html>
   <head>
