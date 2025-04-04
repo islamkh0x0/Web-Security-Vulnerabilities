@@ -26,7 +26,7 @@ I read the source code and found the following:
 </html>
 ``` 
 
-The only interesting thing was the <a href="confirm?next=welcome"> link. This link would take me to the confirm page, where I found the following code:
+The only interesting thing was the `<a href="confirm?next=welcome">` link. This link would take me to the confirm page, where I found the following code:
  
 
 ```html
