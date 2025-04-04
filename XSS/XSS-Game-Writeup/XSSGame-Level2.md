@@ -61,3 +61,5 @@ onload="startTimer('3');alert('1')"
 And it successfully triggers an **alert box**, confirming that the XSS is exploitable through the `onload` attribute.
 
 ![Image](https://github.com/user-attachments/assets/21a25d42-9287-4f07-8015-2da5b0998c51)
+
+---
