@@ -40,7 +40,7 @@ Nothing happened on the page, but when I checked the source code, I saw that wha
 But when I opened the browser's dev tools, I noticed that the server understood the GET request, but it filtered out the }} characters.
 
 ![Image](https://github.com/user-attachments/assets/4ba21823-d3d4-4065-bad0-3b03c4739539)
- so what about replacing `{ `to `&lcub`
+ so what about replacing `{ `to `&lcub` 
 making the payload look like this:
 ```ruby
 ?query=&lcub;&lcub;a='constructor';b=&lcub;&rcub;;a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert()')()}}

@@ -4,14 +4,13 @@ This folder contains write-ups for the **XSS Game** challenges from [XSS Game](h
 
 ## Challenges
 
-- **Challenge 1:** [Solution]()
-- **Challenge 2:** [Solution]()
-- **Challenge 3:** [Solution]()
-- **Challenge 4:** [Solution]()
-- **Challenge 5:** [Solution]()
-- **Challenge 6:** [Solution]()
-- **Challenge 7:** [Solution]()
-- **Challenge 8:** [Solution]()
+- **Challenge 1:** [Solution](https://github.com/islamkh0x0/Web-Security-Vulnerabilities/blob/master/XSS/XSS-Game-Writeup/XSSGame-Level1.md)
+- **Challenge 2:** [Solution](https://github.com/islamkh0x0/Web-Security-Vulnerabilities/blob/master/XSS/XSS-Game-Writeup/XSSGame-Level2.md)
+- **Challenge 3:** [Solution](https://github.com/islamkh0x0/Web-Security-Vulnerabilities/blob/master/XSS/XSS-Game-Writeup/XSSGame-Level3.md)
+- **Challenge 4:** [Solution](https://github.com/islamkh0x0/Web-Security-Vulnerabilities/blob/master/XSS/XSS-Game-Writeup/XSSGame-Level4.md)
+- **Challenge 5:** [Solution](https://github.com/islamkh0x0/Web-Security-Vulnerabilities/blob/master/XSS/XSS-Game-Writeup/XSSGame-Level5.md)
+- **Challenge 6:** [Solution](https://github.com/islamkh0x0/Web-Security-Vulnerabilities/blob/master/XSS/XSS-Game-Writeup/XSSGame-Level6.md) 
+
 
 Each challenge will include:
 - **A description of the vulnerability.**
