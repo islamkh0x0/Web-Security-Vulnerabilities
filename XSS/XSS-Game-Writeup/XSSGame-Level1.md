@@ -3,9 +3,10 @@
 After learning about **XSS**, the first step in finding a vulnerability is testing which characters are allowed and bypass the filter.  
 
 In this challenge, we have an **input field**, as shown in the image. 
-![Image](https://github.com/user-attachments/assets/7566ead3-f20a-4015-86db-e829c5dc344e) 
-  
-Let's enter the following payload:  
+ ![1-1](https://github.com/user-attachments/assets/2aeaa926-8ea8-4390-9cfc-cf661c996e70)
+ 
+Let's enter the following payload: 
+
 
 ```
 eslam"<>
@@ -45,4 +46,6 @@ Since our input is **reflected**, we can inject a simple XSS payload to trigger 
 ```
 
 Once executed, an alert box appears, confirming the **XSS vulnerability**, as shown in the image.
-![Image](https://github.com/user-attachments/assets/2c924616-8081-4d69-918c-ba2f192c95aa)
+
+![1-2](https://github.com/user-attachments/assets/e85387b5-60b2-451c-8bf5-ae321b63af28)
+
