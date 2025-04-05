@@ -1,5 +1,5 @@
 # XSS Game Write-Up: Level 5 
-![Image](https://github.com/user-attachments/assets/45390bc5-7ce4-49e7-ba45-5b07dfd365e7)
+![5-1](https://github.com/user-attachments/assets/3973d72b-5d20-4e47-8174-7ddc57cc0bea)
 
 
 When I opened the challenge, I found a search input field that accepts up to 140 characters. So, I typed `eslam"<>;` to see where the reflection happens and what happens to the special characters, to figure out which ones pass through the filter and which ones get filtered out.
@@ -53,4 +53,4 @@ I tested this payload in the URL: ?utm_campaign={{alert()}}, and guess what? It 
 
 The final URL was: 
 `http://www.xssgame.com/f/JFTG_t7t3N-P/?utm_campaign={{alert()}}` 
-![Image](https://github.com/user-attachments/assets/f1777922-3efd-41d8-ab89-762ccc1fb9b9)
+![5-2](https://github.com/user-attachments/assets/2dbe83aa-76d8-4cf8-b2d2-e58e76dbedbf)
