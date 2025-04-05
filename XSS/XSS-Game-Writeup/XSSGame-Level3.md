@@ -1,6 +1,6 @@
 ### XSSGame Level 3 Writeup
+![3-1](https://github.com/user-attachments/assets/a2755d1a-bf65-4977-a719-25114a4a69ea)
 
-![Gallery Screenshot](https://github.com/user-attachments/assets/c75b0195-6a8c-4c80-8a36-35540fa2548b)
 
 ---
 
@@ -33,7 +33,7 @@ So I crafted the following payload:
 
 `4'onerror="alert()"`
 And it worked — the alert popped up as expected 
-![Image](https://github.com/user-attachments/assets/fc0d0a4e-1ff0-47ba-8d76-3a1206e7ef1d)
+![3-2](https://github.com/user-attachments/assets/f6427ed7-de53-4f4c-9c9c-2b60459cc32d)
 
 
 Here’s how the final HTML looked inside the Developer Tools:
@@ -41,7 +41,8 @@ Here’s how the final HTML looked inside the Developer Tools:
 ```html
 <img src='/static/img/cat4'onerror="alert()" />
 ```
-![Image](https://github.com/user-attachments/assets/4feb05cf-54ed-4a1f-bf98-02bb1f15fe42)
+![3-3](https://github.com/user-attachments/assets/5a2d2bc5-8a91-4c06-afa3-0156c92a35b6)
+
 Which proves that our payload was successfully injected and executed.
 
 
