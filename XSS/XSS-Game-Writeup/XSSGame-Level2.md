@@ -1,6 +1,6 @@
 ### XSSGame Level 2 Writeup 
-![Image](https://github.com/user-attachments/assets/c79e7be3-760f-46be-aa9b-29e4a7612a90)
- 
+ ![2-1](https://github.com/user-attachments/assets/ff827c26-9eef-48b9-bc75-b20e465a8303)
+
 
 
 When I first opened the challenge, I noticed an **input field** that takes a number, along with a **"Create Timer"** button.  
@@ -60,6 +60,6 @@ onload="startTimer('3');alert('1')"
 
 And it successfully triggers an **alert box**, confirming that the XSS is exploitable through the `onload` attribute.
 
-![Image](https://github.com/user-attachments/assets/21a25d42-9287-4f07-8015-2da5b0998c51)
+![2-2](https://github.com/user-attachments/assets/bfbc082a-160d-4867-b602-f86ed6aa8cde)
 
 ---
