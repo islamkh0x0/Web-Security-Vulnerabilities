@@ -1,6 +1,6 @@
 # XSS Game Write-Up: Level 6
+![6-1](https://github.com/user-attachments/assets/73ddaea1-bcad-42d3-b9e5-a94ea7348791)
 
-![Image](https://github.com/user-attachments/assets/d334b0e7-27aa-4619-9908-2ed3d1fd54ac)
 
 After entering the challenge, I followed the same steps I did in Level 5, which was to check the version of AngularJS. This time, I found it was an older version: **AngularJS v1.2.0**. So, I started looking for XSS vulnerabilities in this version and what payload I could use to exploit it. After some searching, I found this payload: 
 
@@ -8,12 +8,12 @@ After entering the challenge, I followed the same steps I did in Level 5, which 
 {{a='constructor';b={};a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert(1)')()}}
 ```
 
-![Image](https://github.com/user-attachments/assets/791736b8-9a6f-4d5f-98ee-fdc74aed9f7d)
+![6-2](https://github.com/user-attachments/assets/be74fe07-4bf0-49e3-83dd-d5e0cda48022)
 
 
 I tried putting it in the search input, but it just rendered as a string and didn't execute or do anything.  
 
-![Image](https://github.com/user-attachments/assets/bd0d88ad-c649-43b3-9e14-fe01bda67460)
+![6-3](https://github.com/user-attachments/assets/3effc1c0-6869-43f8-b466-8371f2005233)
 
 So, I went back to the source code and noticed that the search form was using the POST method:
 
@@ -39,8 +39,9 @@ Nothing happened on the page, but when I checked the source code, I saw that wha
 
 But when I opened the browser's dev tools, I noticed that the server understood the GET request, but it filtered out the }} characters.
 
-![Image](https://github.com/user-attachments/assets/4ba21823-d3d4-4065-bad0-3b03c4739539)
- so what about replacing `{ `to `&lcub` 
+![6-4](https://github.com/user-attachments/assets/9ef93b8d-75b7-4058-baec-8b9c32a90129)
+
+so what about replacing `{ `to `&lcub` 
 making the payload look like this:
 ```ruby
 ?query=&lcub;&lcub;a='constructor';b=&lcub;&rcub;;a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert()')()}}
@@ -48,4 +49,4 @@ making the payload look like this:
 
 And it worked!
 
-![Image](https://github.com/user-attachments/assets/672d32b9-32e7-4ec6-840f-2f1f62403bf2)
+![6-5](https://github.com/user-attachments/assets/bd9a82e4-ffcb-4691-bbfe-ba2f40eec7af)
