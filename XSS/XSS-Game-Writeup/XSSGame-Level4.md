@@ -1,6 +1,6 @@
 ## XSSGame Level 4 Writeup
-![Image](https://github.com/user-attachments/assets/55aa7360-555c-4165-866a-bd92fa199bdf)
- 
+ ![4-1](https://github.com/user-attachments/assets/dd6ecbbf-8b8d-43b0-8371-44b957aad48d)
+
 
 
 When I entered the challenge, I was directed to another page via a sign-up form, which led me to a page with an input field for an email address.
@@ -66,5 +66,5 @@ http://www.xssgame.com/f/__58a1wgqGgI/confirm?next=javascript:alert()
 ```
 
 When I accessed the modified URL, the JavaScript alert was triggered as expected!
+![4-2](https://github.com/user-attachments/assets/5b632a32-0394-4c92-8882-21b4dfd7cbdc)
 
-![Image](https://github.com/user-attachments/assets/a85205bf-623b-4319-bb2b-788d40437d5b)
