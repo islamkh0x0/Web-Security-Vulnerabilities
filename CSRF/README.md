@@ -73,3 +73,6 @@ Some sites check if the request is coming from the same site or a different one.
 ### Through Check Content Type
 
 If the body is JSON, either you make the content type JSON and check it, or it’s just any content type, and you know it’s gonna be JSON, so you treat it like JSON.
+
+---
+And this is My [CSRF Methodology](https://github.com/islamkh0x0/Web-Security-Vulnerabilities/blob/master/CSRF/CSRF-Methodology.md)
