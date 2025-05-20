@@ -38,8 +38,11 @@ select * from books where year=2020 AND sales=1000;
  
 والكومنت فى MySql 
 
+
 Single Line: `-- xxxxxxxxx` 
+
 Multiline: `/* xxxxxxxxxxxxxx */` 
+
  وفى بعض الاوقات بنستخدم Multiline Comment  على انه Space `/**/` علشان نعدى من WAF
 
 ---
