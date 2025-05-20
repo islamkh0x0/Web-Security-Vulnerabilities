@@ -22,7 +22,7 @@ select * from books where year=2020 AND sales=1000;
 | هنا هنستفاد بالموضوع ده واحنا بنتيست ع الثغرة                                                                                      | فى PostgreSQL - Oracle<br>عشان يتعملها concatenate بنعمل كده <br>`'is'`\|\|`'lam'`              |
 |                                                                                                                                    | فى SQLserver - microsoft sql server<br>بتكون كده `'is'+'lam'`                                   |
 
-كل اللى فى الجدول ده بنجربه علشان نـuvt هل فى sql injection ولا لاء 
+كل اللى فى الجدول ده بنجربه علشان نعرف هل فى sql injection ولا لاء 
 وبردو هنعرف نوع الداتا بيز من خلال طريقة الــ concatenate اللى هتتقبل 
  
  منجحش الكلام ده ؟ -- يبقى هنتجه الى AND, OR
@@ -37,8 +37,9 @@ select * from books where year=2020 AND sales=1000;
 ودى اللى بنعتمد عليها فى الاول علشان لو الكويرى معقده وليها تكمله منعملش كومنت لحاجه احنا محتاجنها علشان الكويري تشتغل بدون اخطاء
  
 والكومنت فى MySql 
- Single Line: `-- xxxxxxxxx`
- Multiline: `/* xxxxxxxxxxxxxx */`
+
+Single Line: `-- xxxxxxxxx` 
+Multiline: `/* xxxxxxxxxxxxxx */` 
  وفى بعض الاوقات بنستخدم Multiline Comment  على انه Space `/**/` علشان نعدى من WAF
 
 ---
@@ -91,9 +92,9 @@ SELECT username, password FROM users --
     - لو عدد الأعمدة صح، الاستعلام هينجح وهيظهر نتايج. لو العدد غلط، هيحصل خطأ أو مافيش نتايج.
 
 `' UNION SELECT 1 --` 
-
 لو فشل هنجرب
 `' UNION SELECT 1, 2 --` 
+ 
 
 ولو عرفت إن الأعمدة بتتعامل مع نصوص (strings) 
 جرب تستخدم قيم زي 'test1', 'test2'  
@@ -106,9 +107,11 @@ SELECT username, password FROM users --
 عندنا حاجه اسمها #information_schema دى قاعدة بيانات افتراضية موجودة في أنظمة إدارة قواعد البيانات
 بيكون فيها بيانات كتير زى جميع اسامى ( الجداول - الداتابيز - الاعمده اللى جوا الجداول )
 
-واللى يهمنا فى الموضوع ده هو جدولين فى الداتابيز دي 
-الاول وهو information_schema.tables
-والثانى information_schema.columns
+واللى يهمنا فى الموضوع ده هو جدولين فى الداتابيز دى 
+
+الاول وهو information_schema.tables 
+والثانى information_schema.columns 
+
 
 بعد ما عرفنا عدد الاعمده بالطريقة اللى فوق هنبتدى نشوف الاسامى بتاعة جداول الداتا بيز اللى احنا فيها 
 ولازم الكويرى اللى هنحطها كــ بيلود تكون بنفس عدد الاعمده اللى موجوده فى الاستعلام الاساسي بتاع الموقع 
